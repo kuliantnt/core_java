@@ -70,7 +70,7 @@ class Employee4_4 {
         return salary;
     }
 
-    public void raiseSalary(double byPercent) {
+    void raiseSalary(double byPercent) {
         double raise = salary * byPercent / 100;
         salary += raise;
     }
