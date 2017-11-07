@@ -1,4 +1,5 @@
-package unit4;
+package unit4.Test4_4;
+
 
 public class Test4_4 {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Test4_4 {
           Test 2:Method can change the state of object parameters
          */
         System.out.println("\nTesting tripleSalary");
-        Employee4_4 harry = new Employee4_4("Harry", 50_000);
+        Employee harry = new Employee("Harry", 50_000);
         System.out.println("Before: salary= " + harry.getSalary());
         tripleSalary(harry);
         System.out.println("After: salary= " + harry.getSalary());
@@ -24,8 +25,8 @@ public class Test4_4 {
           Test 3: Methods can't attach new objects to object parameters
          */
         System.out.println("\nTesting swap:");
-        Employee4_4 a = new Employee4_4("Alice", 70_000);
-        Employee4_4 b = new Employee4_4("Bob", 60_000);
+        Employee a = new Employee("Alice", 70_000);
+        Employee b = new Employee("Bob", 60_000);
         System.out.println("Before: a= " + a.getName());
         System.out.println("Before: b= " + b.getName());
         swap(a, b);
@@ -38,13 +39,13 @@ public class Test4_4 {
         System.out.println("End of method: x= " + x);
     }
 
-    private static void tripleSalary(Employee4_4 x) {//work
+    private static void tripleSalary(Employee x) {//work
         x.raiseSalary(200);
         System.out.println("End of method: salary= " + x.getSalary());
     }
 
-    private static void swap(Employee4_4 x, Employee4_4 y) {
-        Employee4_4 temp = x;
+    private static void swap(Employee x, Employee y) {
+        Employee temp = x;
         x = y;
         y = temp;
         System.out.println("End of method: x=" + x.getName());
@@ -53,25 +54,3 @@ public class Test4_4 {
     }
 }
 
-class Employee4_4 {
-    private final String name;
-    private double salary;
-
-    Employee4_4(String n, double s) {
-        name = n;
-        salary = s;
-    }
-
-    String getName() {
-        return name;
-    }
-
-    double getSalary() {
-        return salary;
-    }
-
-    void raiseSalary(double byPercent) {
-        double raise = salary * byPercent / 100;
-        salary += raise;
-    }
-}
