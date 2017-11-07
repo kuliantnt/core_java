@@ -1,7 +1,7 @@
-package unit2;
+package Unit2;
 
 /**
- * the unit2.Test_2_1
+ * the Unit2.Test_2_1
  * @version 1.0
  * @author 哭脸tnt
  */

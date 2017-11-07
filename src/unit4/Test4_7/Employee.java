@@ -1,8 +1,12 @@
-package unit4.Test4_7;
+package Unit4.Test4_7;
 
 import java.text.DateFormat;
 import java.util.*;
 
+/**
+ * Employee
+ * @author lianlian
+ */
 public class Employee {
     private final String name;
     private double salary;
@@ -15,6 +19,9 @@ public class Employee {
         hireDay = calender.getTime();
     }
 
+    /**
+     * @return string name
+     */
     public String getName() {
         return name;
     }

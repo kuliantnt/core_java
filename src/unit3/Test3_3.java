@@ -1,4 +1,4 @@
-package unit3;
+package Unit3;
 import java.util.*;
 
 public class Test3_3 {

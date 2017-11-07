@@ -1,4 +1,4 @@
-package unit3;
+package Unit3;
 
 import java.math.BigInteger;
 import java.util.Scanner;

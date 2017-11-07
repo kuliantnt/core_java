@@ -1,4 +1,4 @@
-package unit3;
+package Unit3;
 
 import java.util.Arrays;
 import java.util.Scanner;

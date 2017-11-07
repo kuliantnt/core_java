@@ -1,4 +1,4 @@
-package unit2;
+package Unit2;
 import java.awt.EventQueue;
 import java.awt.event.*;
 import java.io.*;
