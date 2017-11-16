@@ -14,6 +14,9 @@ public class Student extends Person{
         major = m;
     }
 
+    /**
+     * @return a student majoring "major"
+     */
     @Override
     public String getDescription() {
         return "a student majoring" + getMajor();

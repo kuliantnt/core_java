@@ -20,6 +20,13 @@ public class Employee extends Person {
 
     private Date hireDay;
 
+    /**
+     * @param n the employee name
+     * @param s the employee salary
+     * @param year the employee hire year
+     * @param month the employee hire month
+     * @param day the employee hire day
+     */
     public Employee(String n, double s, int year, int month, int day) {
         super(n);
         salary = s;

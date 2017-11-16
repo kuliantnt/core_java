@@ -5,7 +5,7 @@ public abstract class Person {
     private String name;
 
     /**
-     * @param n name
+     * @param n the Person name
      */
     public Person(String n){
         name = n;
