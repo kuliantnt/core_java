@@ -1,11 +1,11 @@
-package Unit4;
+package Unit4.Test4_1;
 
 import java.text.DateFormatSymbols;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
-public class Test4_1 {
+public class CalendarTest {
     public static void main(String[] args) {
         Locale.setDefault(Locale.JAPAN);
         GregorianCalendar d = new GregorianCalendar();

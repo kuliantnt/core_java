@@ -1,6 +1,6 @@
-package Unit3;
+package Unit3.Test3_9;
 
-public class Test3_9 {
+public class LotteryArray {
     public static void main(String[] args) {
         final int NMAX = 10;
 

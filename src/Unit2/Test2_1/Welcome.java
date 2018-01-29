@@ -1,11 +1,11 @@
-package Unit2;
+package Unit2.Test2_1;
 
 /**
- * the Unit2.Test_2_1
+ * the Unit2.Test2_1.Welcome
  * @version 1.0
  * @author 哭脸tnt
  */
-public class Test_2_1 {
+public class Welcome {
     public static void main(String[] args) {
         String[] geeting = new String[3];
         geeting[0] = "Welcome to Core Java";

@@ -1,7 +1,7 @@
-package Unit3;
+package Unit3.Test3_5;
 import java.util.*;
 
-public class Test3_5 {
+public class LotteryOdds {
     public static void main(String [] args) {
         Scanner in = new Scanner(System.in);
 

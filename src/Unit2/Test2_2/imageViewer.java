@@ -1,4 +1,4 @@
-package Unit2;
+package Unit2.Test2_2;
 import java.awt.EventQueue;
 import java.awt.event.*;
 import java.io.*;
@@ -6,10 +6,10 @@ import javax.swing.*;
 
 /**
  * 一个图形化程序 imageViewer
- * @author 哭脸tnt
+ * @author lianlian
  * @version 1.0
  */
-public class Test_2_2 {
+public class imageViewer {
     public static void main(String [] args){
         EventQueue.invokeLater(new Runnable() {
             @Override

@@ -1,8 +1,14 @@
-package Unit3;
+package Unit3.Test3_2;
 
 import java.util.Scanner;
 
-public class Test3_2 {
+
+/**
+ * Class InputTest
+ * @author lianlian
+ * @version 1.0
+ */
+public class InputTest {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
 

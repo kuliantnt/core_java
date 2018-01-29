@@ -2,7 +2,7 @@ package Unit4.Test4_2;
 
 import java.util.Locale;
 
-public class Test4_2 {
+public class EmployeeTest {
     public static void main(String[] args) {
         Locale.setDefault(Locale.CHINA);
         Employee[] staff = new Employee[3];

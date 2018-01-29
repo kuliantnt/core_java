@@ -1,9 +1,12 @@
-package Unit3;
+package Unit3.Test3_7;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Test3_7 {
+/**
+ * 一个简单的抽奖游戏
+ */
+public class LotteryDrawing {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
 

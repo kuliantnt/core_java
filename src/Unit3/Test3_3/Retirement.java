@@ -1,33 +1,29 @@
-package Unit3;
+package Unit3.Test3_3;
+import java.util.*;
 
-import java.util.Scanner;
-
-public class Test3_4 {
+public class Retirement {
     public static void main(String[] args) {
+        //read input;
         Scanner in = new Scanner(System.in);
+
+        System.out.print("How much money do you need to retire? ");
+        double goal = in.nextDouble();
 
         System.out.print("How much money will you contribute every year? ");
         double payment = in.nextDouble();
 
-        System.out.print("Interest rate in %");
+        System.out.print("Interest rate in %: ");
         double interestRate = in.nextDouble();
 
         double balance = 0;
         int year = 0;
 
-        String input;
-        do {
-
+        while (balance < goal) {
             balance += payment;
             double interest = balance * interestRate / 100;
             balance += interest;
-
-            System.out.printf("After year %d, you balance is %,.2f%n", year, balance);
             year++;
-
-            System.out.print("Ready to retire?(Y/N): ");
-            input = in.next();
-
-        } while (input.equals("N") || input.equals("n"));
+        }
+        System.out.println("You can retire in " + year + " year.");
     }
 }

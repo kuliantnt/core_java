@@ -1,9 +1,9 @@
-package Unit3;
+package Unit3.Test3_6;
 
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class Test3_6 {
+public class BigIntegerTest {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         System.out.print("How many numbers do you need to draw? ");

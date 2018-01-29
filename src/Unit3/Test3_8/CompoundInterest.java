@@ -1,6 +1,6 @@
-package Unit3;
+package Unit3.Test3_8;
 
-public class Test3_8 {
+public class CompoundInterest {
     public static void main(String[] args) {
         final double STARTRATE = 10;
         final int NRATES = 6;
