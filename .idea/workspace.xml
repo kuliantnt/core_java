@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7dd39fb-bf3a-4d11-8bf9-ca79ea4d8056" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/unit4/Test4_2/Employee.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/unit4/Test4_3/Employee.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/unit4/Test4_4/Employee.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/unit4/Test4_5/Employee.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/unit4/Test4_6/Package_Test.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/unit4/Test4_7/Employee.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -235,12 +227,20 @@
       <workItem from="1517372263015" duration="622000" />
       <workItem from="1517385236011" duration="432000" />
       <workItem from="1517386828571" duration="38000" />
-      <workItem from="1517387186302" duration="526000" />
+      <workItem from="1517387186302" duration="555000" />
     </task>
+    <task id="LOCAL-00001" summary="2018年01月31日16:35:18">
+      <created>1517387737109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1517387737109</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1618000" />
+    <option name="totallyTimeSpent" value="1647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1366" height="732" extended-state="6" />
@@ -279,6 +279,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2018年01月31日16:35:18" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018年01月31日16:35:18" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
