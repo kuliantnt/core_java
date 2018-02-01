@@ -13,3 +13,4 @@ public class ObjectAnalyzerTest {
         System.out.println(new ObjectAnalyzer().toString(squares));
     }
 }
+
