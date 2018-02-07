@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../../../ip_search/ip_10_148_231_0.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../ip_search/ip_service.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../ip_search/service_operations_data.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../ip_search/view_ip_service.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../../ip_search/view_service_operations.sql" dialect="MySQL" />
+  </component>
+</project>
