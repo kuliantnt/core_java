@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8b3470-3488-482d-af2f-b674274861eb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit6/Test6_3/CloneTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit6/Test6_4/Employee.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Unit6/Test6_1/EmployeeSortTest.java" afterPath="$PROJECT_DIR$/src/Unit6/Test6_1/EmployeeSortTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -583,7 +578,7 @@
       <workItem from="1517714230239" duration="826000" />
       <workItem from="1517791503982" duration="123000" />
       <workItem from="1517891931681" duration="5047000" />
-      <workItem from="1517965253641" duration="5054000" />
+      <workItem from="1517965253641" duration="5085000" />
     </task>
     <task id="LOCAL-00001" summary="2018年02月01日08:21:45">
       <created>1517444510385</created>
@@ -620,11 +615,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517898510992</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2018年02月07日10:25:26">
+      <created>1517970333255</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1517970333255</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29184000" />
+    <option name="totallyTimeSpent" value="29215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,7 +650,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30730897" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -680,7 +682,8 @@
     <MESSAGE value="2018年02月01日11:13:11" />
     <MESSAGE value="2018年02月02日09:49:10" />
     <MESSAGE value="2018年02月06日14:28:26" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018年02月06日14:28:26" />
+    <MESSAGE value="2018年02月07日10:25:26" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018年02月07日10:25:26" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
