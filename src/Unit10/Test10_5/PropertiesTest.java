@@ -48,7 +48,7 @@ class PropertiesFrame extends JFrame {
         defaultSettings.put("height", "" + DEFAULT_HEIGHT);
         defaultSettings.put("title", "");
 
-        settings = defaultSettings;
+        settings = new Properties(defaultSettings);
 
         if (propertiesFile.exists()) {
             try {

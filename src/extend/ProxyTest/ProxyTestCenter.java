@@ -1,4 +1,4 @@
-package Temp.ProxyTest;
+package extend.ProxyTest;
 
 public class ProxyTestCenter {
     public static void main(String[] args) throws InterruptedException {

@@ -1,8 +1,7 @@
-package Temp.ProxyTest;
+package extend.ProxyTest;
 
 public interface Owner {
     /**
-     * @param tenantName 承租人姓名
      * @return 时候租赁
      */
     Boolean rentHouse()throws InterruptedException;
