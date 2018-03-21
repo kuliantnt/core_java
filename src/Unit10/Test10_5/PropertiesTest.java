@@ -14,12 +14,9 @@ import javax.swing.JOptionPane;
 public class PropertiesTest {
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                PropertiesFrame frame = new PropertiesFrame();
-                frame.setVisible(true);
-            }
+        EventQueue.invokeLater(() -> {
+            PropertiesFrame frame = new PropertiesFrame();
+            frame.setVisible(true);
         });
     }
 
@@ -33,11 +30,11 @@ class PropertiesFrame extends JFrame {
     private File propertiesFile;
     private Properties settings;
 
-    public PropertiesFrame() {
+    PropertiesFrame() {
         String userDir = System.getProperty("user.home");
         File propertiesDir = new File(userDir, ".corejava");
         if (!propertiesDir.exists()) {
-            propertiesDir.mkdir();
+            boolean mkdir = propertiesDir.mkdir();
         }
         propertiesFile = new File(propertiesDir, "program.properties");
 
