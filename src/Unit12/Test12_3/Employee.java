@@ -17,11 +17,11 @@ public class Employee {
     private Date hireDay;
 
     /**
-     * @param n     the employee name
-     * @param s     the employee salary
-     * @param year  the employee hire year
+     * @param n the employee name
+     * @param s the employee salary
+     * @param year the employee hire year
      * @param month the employee hire month
-     * @param day   the employee hire day
+     * @param day the employee hire day
      */
     public Employee(String n, double s, int year, int month, int day) {
         name = n;
@@ -44,7 +44,7 @@ public class Employee {
         return salary;
     }
 
-    public void raiseSalary(double byPercent){
+    public void raiseSalary(double byPercent) {
         double raise = salary * byPercent / 100;
         salary += raise;
     }
@@ -76,6 +76,7 @@ public class Employee {
         DateFormat df = DateFormat.getDateInstance();
         return df.format(hireDay);
     }
+
     /**
      * @return Employee string
      */
