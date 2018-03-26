@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac8b3470-3488-482d-af2f-b674274861eb" name="Default" comment="2018年03月21日13:57:34">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit10/Test10_6/preferencesTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit11/Test11_1/StackTraceTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit11/Test11_2/LoggingImageViewer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit12/Test12_1/PairTest1.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit12/Test12_2/pairTest2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit12/Test12_3/Employee.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit12/Test12_3/Manager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit12/Test12_3/MyPair.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit12/Test12_3/PairTest3.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Unit12/Test12_4/GenericReflectionTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/extend/varTest/VarTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="ac8b3470-3488-482d-af2f-b674274861eb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/Unit12/Test12_4/GenericReflectionTest.java" afterPath="$PROJECT_DIR$/src/Unit12/Test12_4/GenericReflectionTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,9 +43,11 @@
       <file leaf-file-name="GenericReflectionTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Unit12/Test12_4/GenericReflectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -222,6 +213,7 @@
         <option value="$PROJECT_DIR$/src/Unit12/Test12_3/Employee.java" />
         <option value="$PROJECT_DIR$/src/Unit12/Test12_3/PairTest3.java" />
         <option value="$PROJECT_DIR$/src/Unit12/Test12_3/Manager.java" />
+        <option value="$PROJECT_DIR$/src/Unit12/Test12_4/GenericReflectionTest.java" />
       </list>
     </option>
   </component>
@@ -435,7 +427,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PairTest3">
+  <component name="RunManager" selected="Application.GenericReflectionTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -443,14 +435,14 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="LoggingImageViewer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GenericReflectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Unit11.Test11_2.*" />
+          <option name="PATTERN" value="Unit12.Test12_4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Unit11.Test11_2.LoggingImageViewer" />
+      <option name="MAIN_CLASS_NAME" value="Unit12.Test12_4.GenericReflectionTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -613,19 +605,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.LoggingImageViewer" />
-      <item index="1" class="java.lang.String" itemvalue="Application.PairTest1" />
-      <item index="2" class="java.lang.String" itemvalue="Application.pairTest2" />
-      <item index="3" class="java.lang.String" itemvalue="Application.VarTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PairTest3" />
+      <item index="0" class="java.lang.String" itemvalue="Application.PairTest1" />
+      <item index="1" class="java.lang.String" itemvalue="Application.pairTest2" />
+      <item index="2" class="java.lang.String" itemvalue="Application.VarTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.PairTest3" />
+      <item index="4" class="java.lang.String" itemvalue="Application.GenericReflectionTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PairTest3" />
-        <item index="1" class="java.lang.String" itemvalue="Application.pairTest2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.VarTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.PairTest1" />
-        <item index="4" class="java.lang.String" itemvalue="Application.LoggingImageViewer" />
+        <item index="0" class="java.lang.String" itemvalue="Application.GenericReflectionTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PairTest3" />
+        <item index="2" class="java.lang.String" itemvalue="Application.pairTest2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.VarTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.PairTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -683,7 +675,7 @@
       <workItem from="1521881322917" duration="4517000" />
       <workItem from="1521958879375" duration="438000" />
       <workItem from="1521959344611" duration="6608000" />
-      <workItem from="1522025541456" duration="455000" />
+      <workItem from="1522025541456" duration="3069000" />
     </task>
     <task id="LOCAL-00001" summary="2018年02月01日08:21:45">
       <created>1517444510385</created>
@@ -776,11 +768,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521614092258</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="2018年03月26日09:00:00">
+      <created>1522026019859</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1522026019859</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114328000" />
+    <option name="totallyTimeSpent" value="116942000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -797,11 +796,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23586957" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.4969697" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28139183" sideWeight="0.49335548" order="5" side_tool="false" content_ui="combo" />
@@ -819,7 +819,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294702" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23586957" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32781458" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -875,7 +874,8 @@
     <MESSAGE value="2018年02月13日09:56:38" />
     <MESSAGE value="改变了一下换行符" />
     <MESSAGE value="2018年03月21日13:57:34" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018年03月21日13:57:34" />
+    <MESSAGE value="2018年03月26日09:00:00" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018年03月26日09:00:00" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1189,9 +1189,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Unit12/Test12_4/GenericReflectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
