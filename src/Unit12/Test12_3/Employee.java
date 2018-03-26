@@ -66,11 +66,13 @@ public class Employee {
                 && Objects.equals(hireDay, other.hireDay);
     }
 
-    public int hashCode(){
-        return Objects.hash(name,salary,hireDay);
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(getSalary(), getName(), getHireDay());
     }
 
-    String getHireDay() {
+    private String getHireDay() {
         DateFormat df = DateFormat.getDateInstance();
         return df.format(hireDay);
     }
