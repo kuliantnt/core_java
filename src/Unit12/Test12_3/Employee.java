@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Employee {
 
 
-    private double salary;
+    private double salary ;
 
     private String name;
 
@@ -28,6 +28,12 @@ public class Employee {
         salary = s;
         GregorianCalendar calendar = new GregorianCalendar(year, month - 1, day);
         hireDay = calendar.getTime();
+    }
+
+    public Employee(String name) {
+        this.name = name;
+        salary = 0;
+        hireDay = new Date();
     }
 
 
