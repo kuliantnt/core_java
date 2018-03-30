@@ -1,13 +1,16 @@
 package Unit4.Test4_7;
 
 import java.text.DateFormat;
-import java.util.*;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  * Employee
+ *
  * @author lianlian
  */
 public class Employee {
+
     private final String name;
     private double salary;
     private Date hireDay;

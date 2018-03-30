@@ -1,6 +1,7 @@
 package Unit3.Test3_8;
 
 public class CompoundInterest {
+
     public static void main(String[] args) {
         final double STARTRATE = 10;
         final int NRATES = 6;
@@ -18,15 +19,17 @@ public class CompoundInterest {
             for (int j = 0; j != balances[i].length; j++) {
                 double oldBalance = balances[i - 1][j];
                 double interest = oldBalance * interestRate[j];
-                balances[i][j] = oldBalance+interest;
+                balances[i][j] = oldBalance + interest;
             }
         }
-        for(int j =0 ;j != interestRate.length; j++)
-            System.out.printf("%9.0f%%",100*interestRate[j]);
+        for (int j = 0; j != interestRate.length; j++) {
+            System.out.printf("%9.0f%%", 100 * interestRate[j]);
+        }
         System.out.println();
-        for(double[] row:balances){
-            for (double b:row)
-                System.out.printf("%10.2f",b);
+        for (double[] row : balances) {
+            for (double b : row) {
+                System.out.printf("%10.2f", b);
+            }
             System.out.println();
         }
     }

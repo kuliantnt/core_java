@@ -25,17 +25,17 @@ import javax.swing.JTextArea;
 public class LoggingImageViewer {
 
     public static void main(String[] args) {
-        if(System.getProperty("java.util.logging.config.class") == null
-                && System.getProperty("java.util.logging.config.file")==null){
-            try{
+        if (System.getProperty("java.util.logging.config.class") == null
+                && System.getProperty("java.util.logging.config.file") == null) {
+            try {
                 Logger.getLogger("Unit11.Test11_2").setLevel(Level.ALL);
                 final int LOG_ROTATION_COUNT = 10;
                 Handler handler = new FileHandler("%h/LoggingImageViewer.log", 0,
                         LOG_ROTATION_COUNT);
                 Logger.getLogger("Unit11.Test11_2").addHandler(handler);
-            }
-            catch(IOException e){
-                Logger.getLogger("Unit11.Test11_2").log(Level.SEVERE,"Can't create log file handler",e);
+            } catch (IOException e) {
+                Logger.getLogger("Unit11.Test11_2")
+                        .log(Level.SEVERE, "Can't create log file handler", e);
 
             }
         }
@@ -54,13 +54,13 @@ public class LoggingImageViewer {
     }
 
 }
+
 class ImageViewerFrame extends JFrame {
 
     public static final int DEFAULT_WIDTH = 300;
     public static final int DEFAULT_HEIGHT = 400;
-
-    private JLabel label;
     private static Logger logger = Logger.getLogger("Unit11.Test11_2");
+    private JLabel label;
 
     public ImageViewerFrame() {
         logger.entering("ImageViewFrame", "<init>");
@@ -120,14 +120,16 @@ class ImageViewerFrame extends JFrame {
         }
     }
 }
+
 class WindowHandler extends StreamHandler {
+
     private JFrame frame;
 
     public WindowHandler() {
         frame = new JFrame();
         final JTextArea output = new JTextArea();
         output.setEditable(false);
-        frame.setSize(200,200);
+        frame.setSize(200, 200);
         frame.add(new JScrollPane(output));
         frame.setFocusableWindowState(false);
         frame.setVisible(true);
@@ -135,7 +137,8 @@ class WindowHandler extends StreamHandler {
             @Override
             public void write(int b) {
             }
-            public void write(byte[] b, int off,int  len){
+
+            public void write(byte[] b, int off, int len) {
                 output.append(new String(b, off, len));
             }
         });
@@ -143,8 +146,9 @@ class WindowHandler extends StreamHandler {
 
     @Override
     public void publish(LogRecord record) {
-        if (!frame.isVisible())
+        if (!frame.isVisible()) {
             return;
+        }
         super.publish(record);
         flush();
 

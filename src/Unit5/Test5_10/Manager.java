@@ -2,22 +2,23 @@ package Unit5.Test5_10;
 
 import Unit5.Test5_9.Employee;
 
-public class Manager extends Employee{
+public class Manager extends Employee {
 
     private double bonus;
+
     /**
-     * @param n     the manage name
-     * @param s     the manage salary
-     * @param year  the manage hire year
+     * @param n the manage name
+     * @param s the manage salary
+     * @param year the manage hire year
      * @param month the manage hire month
-     * @param day   the manage hire day
+     * @param day the manage hire day
      */
     public Manager(String n, double s, int year, int month, int day) {
         super(n, s, year, month, day);
         bonus = 0;
     }
 
-    public double getSalary(){
+    public double getSalary() {
         double baseSalary = super.getSalary();
         return baseSalary + bonus;
     }
@@ -28,19 +29,20 @@ public class Manager extends Employee{
 
     @Override
     public boolean equals(Object obj) {
-        if(!super.equals(obj))
+        if (!super.equals(obj)) {
             return false;
-        Manager other = (Manager)obj;
+        }
+        Manager other = (Manager) obj;
         return bonus == other.bonus;
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return super.hashCode() + (17 * new Double(bonus).hashCode());
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return super.toString() + "[bonus=" + bonus + "]";
     }
 }

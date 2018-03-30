@@ -1,10 +1,11 @@
 package extend.ProxyTest;
 
 public interface Owner {
+
     /**
      * @return 时候租赁
      */
-    Boolean rentHouse()throws InterruptedException;
+    Boolean rentHouse() throws InterruptedException;
 
     void cleanHouse() throws InterruptedException;
 

@@ -3,6 +3,7 @@ package Unit3.Test3_4;
 import java.util.Scanner;
 
 public class Retirement2 {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 

@@ -1,6 +1,7 @@
 package Unit4.Test4_4;
 
 class Employee {
+
     private final String name;
     private double salary;
 

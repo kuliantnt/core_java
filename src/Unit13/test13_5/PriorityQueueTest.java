@@ -20,8 +20,7 @@ public class PriorityQueueTest {
             System.out.println(date.get(Calendar.YEAR));
         }
         System.out.println("Removing elements...");
-        while (!pq.isEmpty())
-        {
+        while (!pq.isEmpty()) {
             System.out.println(pq.remove().get(Calendar.YEAR));
         }
     }

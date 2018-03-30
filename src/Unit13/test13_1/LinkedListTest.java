@@ -24,8 +24,9 @@ public class LinkedListTest {
         Iterator<String> bIter = b.iterator();
 
         while (bIter.hasNext()) {
-            if (aIter.hasNext())
+            if (aIter.hasNext()) {
                 aIter.next();
+            }
             aIter.add(bIter.next());
         }
         System.out.println(a);

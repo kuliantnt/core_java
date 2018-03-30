@@ -3,6 +3,7 @@ package Unit4.Test4_5;
 import java.util.Locale;
 
 public class ConstructorTest {
+
     public static void main(String[] args) {
         Locale.setDefault(Locale.CHINA);
         Employee[] staff = new Employee[3];

@@ -1,16 +1,27 @@
 package Unit2.Test2_2;
+
 import java.awt.EventQueue;
-import java.awt.event.*;
-import java.io.*;
-import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.WindowConstants;
 
 /**
  * 一个图形化程序 imageViewer
+ *
  * @author lianlian
  * @version 1.0
  */
 public class imageViewer {
-    public static void main(String [] args){
+
+    public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
@@ -22,11 +33,13 @@ public class imageViewer {
         });
     }
 }
+
 class ImageViewerFrame extends JFrame {
-    private JLabel label;
-    private JFileChooser chooser;
+
     private static final int DEFAULT_WIDTH = 300;
     private static final int DEFAULT_HEIGHT = 400;
+    private JLabel label;
+    private JFileChooser chooser;
 
     public ImageViewerFrame() {
         setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);

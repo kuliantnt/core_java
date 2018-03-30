@@ -6,6 +6,7 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 
 public class CalendarTest {
+
     public static void main(String[] args) {
         Locale.setDefault(Locale.JAPAN);
         GregorianCalendar d = new GregorianCalendar();
@@ -38,17 +39,20 @@ public class CalendarTest {
         do {
             int day = d.get(Calendar.DAY_OF_MONTH);
             System.out.printf("%3d", day);
-            if (day == today)
+            if (day == today) {
                 System.out.print("*");
-            else
+            } else {
                 System.out.print(" ");
+            }
 
             d.add(Calendar.DAY_OF_MONTH, 1);
             weekday = d.get(Calendar.DAY_OF_WEEK);
-            if (weekday == firstDayOfWeek)
+            if (weekday == firstDayOfWeek) {
                 System.out.println();
+            }
         } while (d.get(Calendar.MONTH) == month);
-        if (weekday != firstDayOfWeek)
+        if (weekday != firstDayOfWeek) {
             System.out.println();
+        }
     }
 }

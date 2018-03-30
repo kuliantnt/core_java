@@ -14,9 +14,9 @@ public class GenericReflectionTest {
 
     public static void main(String[] args) {
         String name;
-        if (args.length > 0)
+        if (args.length > 0) {
             name = args[0];
-        else {
+        } else {
             Scanner in = new Scanner(System.in);
             System.out.print("Enter class name (e.g. java.util.Collections): ");
             name = in.next();
@@ -62,8 +62,9 @@ public class GenericReflectionTest {
 
     private static void printType(Type[] types, String pre, String sep, String suf,
             boolean isDefinition) {
-        if (pre.equals(" extends ") && Arrays.equals(types, new Type[]{Object.class}))
+        if (pre.equals(" extends ") && Arrays.equals(types, new Type[]{Object.class})) {
             return;
+        }
         if (types.length > 0) {
             System.out.print(pre);
         }
@@ -85,8 +86,9 @@ public class GenericReflectionTest {
         } else if (type instanceof TypeVariable<?>) {
             TypeVariable<?> t = (TypeVariable<?>) type;
             System.out.print(t.getName());
-            if (isDefinition)
+            if (isDefinition) {
                 printType(t.getBounds(), " extends ", " & ", "", false);
+            }
         } else if (type instanceof WildcardType) {
             WildcardType t = (WildcardType) type;
             System.out.print("?");

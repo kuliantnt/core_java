@@ -5,11 +5,13 @@ import java.util.Scanner;
 
 /**
  * Class InputTest
+ *
  * @author lianlian
  * @version 1.0
  */
 public class InputTest {
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
         //get first input
@@ -20,6 +22,6 @@ public class InputTest {
         System.out.print("What old are you? ");
         int age = in.nextInt();
 
-        System.out.printf("Hello%s. Next year, you'll be %d",name,age+1);
+        System.out.printf("Hello%s. Next year, you'll be %d", name, age + 1);
     }
 }

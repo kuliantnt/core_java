@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Employee {
 
 
-    private double salary ;
+    private double salary;
 
     private String name;
 
@@ -36,18 +36,16 @@ public class Employee {
         hireDay = new Date();
     }
 
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-
     public String getName() {
         return name;
     }
 
     public double getSalary() {
         return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public void raiseSalary(double byPercent) {
@@ -57,14 +55,17 @@ public class Employee {
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
+        if (this == obj) {
             return true;
+        }
 
-        if (obj == null)
+        if (obj == null) {
             return false;
+        }
 
-        if (getClass() != obj.getClass())
+        if (getClass() != obj.getClass()) {
             return false;
+        }
         //已经确定other obj是Employee以及并不为空
         Employee other = (Employee) obj;
 

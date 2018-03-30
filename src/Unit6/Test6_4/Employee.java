@@ -5,19 +5,22 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class Employee implements Cloneable{
+public class Employee implements Cloneable {
+
     private static int nextID = 1;
-    private int id;
     private final String name;
+    private int id;
     private double salary;
 
 
     private Date hireDay;
+
     public Employee(String n, double s) {
         name = n;
         salary = s;
         hireDay = new Date();
     }
+
     public Employee(String n, double s, int year, int month, int day) {
         name = n;
         salary = s;
@@ -26,10 +29,11 @@ public class Employee implements Cloneable{
         id = nextID;
         ++nextID;
     }
+
     @Override
-    public Employee clone() throws CloneNotSupportedException{
-        Employee cloned = (Employee)super.clone();
-        cloned.hireDay = (Date)hireDay.clone();
+    public Employee clone() throws CloneNotSupportedException {
+        Employee cloned = (Employee) super.clone();
+        cloned.hireDay = (Date) hireDay.clone();
         return cloned;
     }
 
@@ -41,8 +45,8 @@ public class Employee implements Cloneable{
         return salary;
     }
 
-    public void setHireDay(int year, int month ,int day) {
-        Date newHirDay = new GregorianCalendar(year,month -1, day).getTime();
+    public void setHireDay(int year, int month, int day) {
+        Date newHirDay = new GregorianCalendar(year, month - 1, day).getTime();
         this.hireDay.setTime(newHirDay.getTime());
     }
 

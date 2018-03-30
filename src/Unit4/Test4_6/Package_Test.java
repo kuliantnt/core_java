@@ -1,12 +1,14 @@
 package Unit4.Test4_6;
 
-import Unit4.Test4_7.*;
-import static java.lang.System.*;
+import static java.lang.System.out;
+
+import Unit4.Test4_7.Employee;
 
 /**
  * @see Unit4.Test4_7.Employee#Employee(String, double, int, int, int)
  */
 public class Package_Test {
+
     public static void main(String[] args) {
         Employee harry = new Employee("Harry Hacker", 50_000, 1989, 10, 1);
         harry.raiseSalary(5);

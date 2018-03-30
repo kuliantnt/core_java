@@ -35,24 +35,27 @@ public class preferencesTest {
 
 }
 
-class PreferencesFrame extends JFrame{
-    public static final int DEFAULT_WIDTH=300;
-    public static final int DEFAULT_HEIGHT=300;
+class PreferencesFrame extends JFrame {
 
-    public PreferencesFrame(){
+    public static final int DEFAULT_WIDTH = 300;
+    public static final int DEFAULT_HEIGHT = 300;
+
+    public PreferencesFrame() {
         Preferences root = Preferences.userRoot();
         final Preferences node = root.node("/com/lianlian");
-        int left = node.getInt("left",0);
-        int top = node.getInt("top",0);
-        int width = node.getInt("width",DEFAULT_WIDTH);
-        int height = node.getInt("height",DEFAULT_HEIGHT);
-        setBounds(left,top,width,height);
+        int left = node.getInt("left", 0);
+        int top = node.getInt("top", 0);
+        int width = node.getInt("width", DEFAULT_WIDTH);
+        int height = node.getInt("height", DEFAULT_HEIGHT);
+        setBounds(left, top, width, height);
 
-        String title = node.get("title","");
-        if(title.equals(""))
-            title= JOptionPane.showInputDialog("Please supply a frame title:");
-        if(title ==null)
+        String title = node.get("title", "");
+        if (title.equals("")) {
+            title = JOptionPane.showInputDialog("Please supply a frame title:");
+        }
+        if (title == null) {
             title = "";
+        }
         setTitle(title);
 
         final JFileChooser chooser = new JFileChooser();
@@ -80,8 +83,8 @@ class PreferencesFrame extends JFrame{
         exportItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(chooser.showSaveDialog(PreferencesFrame.this)==JFileChooser.APPROVE_OPTION){
-                    try{
+                if (chooser.showSaveDialog(PreferencesFrame.this) == JFileChooser.APPROVE_OPTION) {
+                    try {
                         OutputStream out = new FileOutputStream(chooser.getSelectedFile());
                         node.exportSubtree(out);
                         out.close();
@@ -97,8 +100,8 @@ class PreferencesFrame extends JFrame{
         importItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (chooser.showOpenDialog(PreferencesFrame.this) == JFileChooser.APPROVE_OPTION){
-                    try{
+                if (chooser.showOpenDialog(PreferencesFrame.this) == JFileChooser.APPROVE_OPTION) {
+                    try {
                         InputStream in = new FileInputStream(chooser.getSelectedFile());
                         Preferences.importPreferences(in);
                         in.close();
@@ -114,11 +117,11 @@ class PreferencesFrame extends JFrame{
         exitItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                node.putInt("left",getX());
-                node.putInt("top",getY());
-                node.putInt("width",getWidth());
-                node.putInt("height",getHeight());
-                node.put("title",getTitle());
+                node.putInt("left", getX());
+                node.putInt("top", getY());
+                node.putInt("width", getWidth());
+                node.putInt("height", getHeight());
+                node.put("title", getTitle());
                 System.exit(0);
             }
         });

@@ -1,12 +1,18 @@
 package Unit5.Test5_13;
-import java.util.*;
-import java.lang.reflect.*;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Scanner;
+
 public class ReflectionTest {
+
     public static void main(String[] args) {
         String name;
-        if (args.length > 0)
+        if (args.length > 0) {
             name = args[0];
-        else {
+        } else {
             Scanner in = new Scanner(System.in);
             System.out.println("Enter class name (e.g. java.util.Data): ");
             name = in.next();
@@ -20,8 +26,9 @@ public class ReflectionTest {
                 System.out.print(modifiers + " ");
             }
             System.out.print("class " + name);
-            if (superCl != null && superCl != Object.class)
+            if (superCl != null && superCl != Object.class) {
                 System.out.print(" extends " + superCl.getName());
+            }
             System.out.print("\n{\n");
 
             printConstructors(cl);
@@ -40,15 +47,17 @@ public class ReflectionTest {
             String name = c.getName();
             System.out.print("  ");
             String modifiers = Modifier.toString(c.getModifiers());
-            if (modifiers.length() > 0)
+            if (modifiers.length() > 0) {
                 System.out.print(modifiers + " ");
+            }
             System.out.print(name + "(");
 
             //print parameter types
             Class[] paraTypes = c.getParameterTypes();
             for (int j = 0; j < paraTypes.length; j++) {
-                if (j > 0)
+                if (j > 0) {
                     System.out.print(", ");
+                }
                 System.out.print(paraTypes[j].getName());
             }
             System.out.println(");");
@@ -71,8 +80,9 @@ public class ReflectionTest {
             //print parameter types
             Class[] paramType = m.getParameterTypes();
             for (int j = 0; j < paramType.length; j++) {
-                if (j > 0)
+                if (j > 0) {
                     System.out.print(", ");
+                }
                 System.out.print(paramType[j].getName());
             }
             System.out.println(");");

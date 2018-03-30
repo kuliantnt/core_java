@@ -1,23 +1,12 @@
 package Unit5.Test5_6;
 
 import Unit5.Test5_5.Person;
-
 import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Employee extends Person {
 
     private double salary;
-
-
-    public Date getHireDay() {
-        return hireDay;
-    }
-
-    public void setHireDay(Date hireDay) {
-        this.hireDay = hireDay;
-    }
-
     private Date hireDay;
 
     /**
@@ -32,6 +21,14 @@ public class Employee extends Person {
         salary = s;
         GregorianCalendar calendar = new GregorianCalendar(year, month - 1, day);
         hireDay = calendar.getTime();
+    }
+
+    public Date getHireDay() {
+        return hireDay;
+    }
+
+    public void setHireDay(Date hireDay) {
+        this.hireDay = hireDay;
     }
 
     public double getSalary() {

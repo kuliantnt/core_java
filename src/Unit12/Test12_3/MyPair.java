@@ -3,6 +3,7 @@ package Unit12.Test12_3;
 import java.util.Objects;
 
 public class MyPair<T> {
+
     private T first;
     private T second;
 

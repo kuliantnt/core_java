@@ -11,6 +11,7 @@ public class PairTest1 {
         System.out.println("max = " + mm.getValue());
     }
 }
+
 class ArrayAlg {
 
     public static Pair<String, String> minmax(String[] a) {

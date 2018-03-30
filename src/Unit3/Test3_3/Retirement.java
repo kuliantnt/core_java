@@ -1,7 +1,9 @@
 package Unit3.Test3_3;
-import java.util.*;
+
+import java.util.Scanner;
 
 public class Retirement {
+
     public static void main(String[] args) {
         //read input;
         Scanner in = new Scanner(System.in);

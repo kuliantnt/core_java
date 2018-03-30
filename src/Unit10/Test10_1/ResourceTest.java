@@ -32,7 +32,7 @@ class ResourceTestFrame extends JFrame {
         JTextArea textArea = new JTextArea();
         InputStream stream = getClass().getResourceAsStream("/about.txt");
         Scanner in = new Scanner(stream);
-        while(in.hasNext()) {
+        while (in.hasNext()) {
             textArea.append(in.nextLine() + "\n");
         }
         add(textArea);

@@ -2,14 +2,15 @@ package Unit5.Test5_7;
 
 import Unit5.Test5_5.Person;
 
-public class Student extends Person{
+public class Student extends Person {
+
     private String major;
 
     /**
      * @param n name
      * @param m major
      */
-    public Student(String n, String m){
+    public Student(String n, String m) {
         super(n);
         major = m;
     }

@@ -1,6 +1,7 @@
 package extend.ProxyTest;
 
 public class ProxyTestCenter {
+
     public static void main(String[] args) throws InterruptedException {
         //房东
         HouseOwner houseOwner = new HouseOwner("包租婆");

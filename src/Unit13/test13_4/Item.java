@@ -2,7 +2,7 @@ package Unit13.test13_4;
 
 import java.util.Objects;
 
-public class Item implements Comparable<Item>{
+public class Item implements Comparable<Item> {
 
     private String description;
     private int partNumber;
@@ -45,6 +45,6 @@ public class Item implements Comparable<Item>{
 
     @Override
     public int compareTo(Item o) {
-        return Integer.compare(partNumber,o.partNumber);
+        return Integer.compare(partNumber, o.partNumber);
     }
 }
