@@ -31,6 +31,7 @@ class BallRunnable implements Runnable{
     BallRunnable(Ball ball, Component component){
         this.ball = ball;
         this.comparator = component;
+
     }
 
     @Override
