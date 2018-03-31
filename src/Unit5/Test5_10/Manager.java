@@ -1,6 +1,7 @@
 package Unit5.Test5_10;
 
 import Unit5.Test5_9.Employee;
+import java.util.Objects;
 
 public class Manager extends Employee {
 
@@ -38,8 +39,9 @@ public class Manager extends Employee {
 
     @Override
     public int hashCode() {
-        return super.hashCode() + (17 * new Double(bonus).hashCode());
+        return Objects.hash(super.hashCode(), bonus);
     }
+
 
     @Override
     public String toString() {

@@ -1,4 +1,4 @@
-package extend.ProxyTest;
+package extend.proxyTest;
 
 public interface Owner {
 
