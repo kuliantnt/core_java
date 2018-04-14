@@ -1,6 +1,6 @@
 package Unit14.test14_7;
 
-import Unit14.test14_6.Bank;
+import Unit14.test14_9.Bank;
 
 public class TransferRunnable implements Runnable {
 
@@ -12,7 +12,8 @@ public class TransferRunnable implements Runnable {
     @Override
     public void run() {
         try {
-            for (int i = 0; i < 1000; i++) {
+            //noinspection InfiniteLoopStatement
+            while (true){
                 int toAccount = (int) (bank.size() * Math.random());
                 double amount = maxAmount * Math.random();
                 bank.transfer(fromAccount, toAccount, amount);

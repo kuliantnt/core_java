@@ -26,13 +26,15 @@ public class Bank {
      * @param from 来自账户
      * @param to 目标账户
      * @param amount 数量
+     * @param no 编号
      */
-    public void transfer(int from, int to, double amount) {
+    public void transfer(int from, int to, double amount,int no) {
         bankLock.lock();
 
         try {
             if (accounts[from] < amount)
                 return;
+            System.out.print(no);
             System.out.print(Thread.currentThread());
             accounts[from] -= amount;
             System.out.printf(" %10.2f from %d to %d", amount, from, to);
