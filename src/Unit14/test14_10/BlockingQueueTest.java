@@ -27,6 +27,9 @@ public class BlockingQueueTest {
     }
 }
 
+/**
+ * 文件并发会话
+ */
 class FileEnumerationTask implements Runnable {
 
     public static File DUMMY = new File("");
@@ -49,6 +52,11 @@ class FileEnumerationTask implements Runnable {
 
     }
 
+    /**
+     * 枚举文件夹
+     * @param directory 文件夹
+     * @throws InterruptedException 线程中断异常
+     */
     private void enumerate(File directory) throws InterruptedException {
         File[] files = directory.listFiles();
         assert files != null;
