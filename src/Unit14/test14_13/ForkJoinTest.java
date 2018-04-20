@@ -25,13 +25,13 @@ interface Filter{
 
 class Counter extends RecursiveTask<Integer> {
 
-    public static final int THRESHOLD = 1000;
+    private static final int THRESHOLD = 1000;
     private double[] values;
     private int from;
     private int to;
     private Filter filter;
 
-    public Counter(double[] values, int from, int to, Filter filter) {
+    Counter(double[] values, int from, int to, Filter filter) {
         this.values = values;
         this.from = from;
         this.to = to;

@@ -22,14 +22,11 @@ import javax.swing.JOptionPane;
 public class preferencesTest {
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                PreferencesFrame frame = new PreferencesFrame();
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.setVisible(true);
+        EventQueue.invokeLater(() -> {
+            PreferencesFrame frame = new PreferencesFrame();
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setVisible(true);
 
-            }
         });
     }
 
@@ -80,50 +77,41 @@ class PreferencesFrame extends JFrame {
 
         JMenuItem exportItem = new JMenuItem("Export preferences");
         menu.add(exportItem);
-        exportItem.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (chooser.showSaveDialog(PreferencesFrame.this) == JFileChooser.APPROVE_OPTION) {
-                    try {
-                        OutputStream out = new FileOutputStream(chooser.getSelectedFile());
-                        node.exportSubtree(out);
-                        out.close();
-                    } catch (BackingStoreException | IOException e1) {
-                        e1.printStackTrace();
-                    }
+        exportItem.addActionListener(e -> {
+            if (chooser.showSaveDialog(PreferencesFrame.this) == JFileChooser.APPROVE_OPTION) {
+                try {
+                    OutputStream out = new FileOutputStream(chooser.getSelectedFile());
+                    node.exportSubtree(out);
+                    out.close();
+                } catch (BackingStoreException | IOException e1) {
+                    e1.printStackTrace();
                 }
             }
         });
 
         JMenuItem importItem = new JMenuItem("Import preferences");
         menu.add(importItem);
-        importItem.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (chooser.showOpenDialog(PreferencesFrame.this) == JFileChooser.APPROVE_OPTION) {
-                    try {
-                        InputStream in = new FileInputStream(chooser.getSelectedFile());
-                        Preferences.importPreferences(in);
-                        in.close();
-                    } catch (InvalidPreferencesFormatException | IOException e1) {
-                        e1.printStackTrace();
-                    }
+        importItem.addActionListener(e -> {
+            if (chooser.showOpenDialog(PreferencesFrame.this) == JFileChooser.APPROVE_OPTION) {
+                try {
+                    InputStream in = new FileInputStream(chooser.getSelectedFile());
+                    Preferences.importPreferences(in);
+                    in.close();
+                } catch (InvalidPreferencesFormatException | IOException e1) {
+                    e1.printStackTrace();
                 }
             }
         });
 
         JMenuItem exitItem = new JMenuItem("Exit");
         menu.add(exitItem);
-        exitItem.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                node.putInt("left", getX());
-                node.putInt("top", getY());
-                node.putInt("width", getWidth());
-                node.putInt("height", getHeight());
-                node.put("title", getTitle());
-                System.exit(0);
-            }
+        exitItem.addActionListener(e -> {
+            node.putInt("left", getX());
+            node.putInt("top", getY());
+            node.putInt("width", getWidth());
+            node.putInt("height", getHeight());
+            node.put("title", getTitle());
+            System.exit(0);
         });
     }
 }
