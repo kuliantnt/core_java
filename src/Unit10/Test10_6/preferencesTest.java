@@ -34,10 +34,10 @@ public class preferencesTest {
 
 class PreferencesFrame extends JFrame {
 
-    public static final int DEFAULT_WIDTH = 300;
-    public static final int DEFAULT_HEIGHT = 300;
+    private static final int DEFAULT_WIDTH = 300;
+    private static final int DEFAULT_HEIGHT = 300;
 
-    public PreferencesFrame() {
+    PreferencesFrame() {
         Preferences root = Preferences.userRoot();
         final Preferences node = root.node("/com/lianlian");
         int left = node.getInt("left", 0);
